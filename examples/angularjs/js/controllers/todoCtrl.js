@@ -37,7 +37,7 @@ angular.module('todomvc')
 			if (!newTodo.title) {
 				return;
 			}
-
+			
 			$scope.saving = true;
 			store.insert(newTodo)
 				.then(function success() {
